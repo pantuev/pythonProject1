@@ -1,14 +1,200 @@
-def method_with_unused_parameter(used, redundant):
-    print("It is used parameter: " + str(used))
+# ======= execise for test in OOP
+class A:
+    def __init__(self):
+        print('A')
 
 
-def intention_example(a, b):
-    if not (a and b):
-        return 1
-    return 2
+class B:
+    def MM(self):
+        print('B')
 
 
-method_with_unused_parameter("first", "second")
-method_with_unused_parameter("used", "unused")
-intention_example(True, False)
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+class C(A):
+    def __init__(self):
+        print('C')
+
+
+class D(A, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+
+
+# ======================
+class A:
+    def __init__(self):
+        print('A')
+
+
+class B:
+    pass
+
+
+class C(A):
+    def __init__(self):
+        print('C')
+
+
+class D(C, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+
+
+# ======================
+class A:
+    pass
+
+
+class B:
+    def __init__(self):
+        print('B')
+
+
+class C(A):
+    def __init__(self):
+        print('C')
+
+
+class D(A, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+
+
+# ======================
+class A:
+    def __init__(self):
+        print('A')
+
+
+class B:
+    def __init__(self):
+        print('B')
+
+
+class C(A):
+    pass
+
+
+class D(C, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# =====================
+print('================')
+
+
+# ======================
+class A:
+    def __init__(self):
+        print('A')
+
+
+class B:
+    def MM(self):
+        print('B')
+
+
+class C(A):
+    def __init__(self):
+        print('C')
+
+
+class D(A, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+
+
+# ======================
+class A():
+    def __init__(self):
+        print('A')
+
+
+class B:
+    pass
+
+
+class C(A):
+    def __init__(self):
+        print('C')
+
+
+class D(C, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+
+
+# ======================
+class A():
+    pass
+
+
+class B():
+    def __init__(self):
+        print('B')
+
+
+class C(A):
+    def __init__(self):
+        print('C')
+
+
+class D(A, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+
+
+# ======================
+class A:
+    def __init__(self):
+        print('A')
+
+
+class B(A):
+    pass
+
+
+class C(A):
+    pass
+
+
+class D(C, B):
+    pass
+
+
+for i in A, B, C, D:
+    a = i()
+# ======================
+print('================')
+# ======================
